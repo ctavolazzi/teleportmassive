@@ -1,0 +1,2 @@
+2024-11-15 20:11:55,958 | MainProcess | MainThread | AutogenGame | INFO | Setting up agents | {}
+2024-11-15 20:11:55,959 | MainProcess | MainThread | AutogenGame | ERROR | Fatal error: 'AutogenGame' object has no attribute 'assistant_system_message' | {}

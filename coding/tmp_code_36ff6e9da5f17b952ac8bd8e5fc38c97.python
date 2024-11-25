@@ -1,0 +1,18 @@
+def handle_player_choice(game_state, choice):
+    if choice == 1:
+        game_state.update_scene(2)  # Move to the next scene where Sam goes for a walk
+        game_state.stats['energy'] -= 10  # Walking takes some energy
+        return "You step outside and feel the fresh air fill your lungs. The world is vibrant and alive."
+    elif choice == 2:
+        game_state.update_scene(3)  # Move to the next scene where Sam sketches
+        game_state.stats['creativity'] += 10  # Sketching boosts creativity
+        return "You grab your sketchbook and start drawing your dream of flying, feeling inspired."
+    elif choice == 3:
+        game_state.update_scene(4)  # Move to the next scene where Sam remembers details
+        game_state.remember_dream("Flying around skyscrapers with joy and freedom.")
+        game_state.stats['happiness'] += 5  # Remembering boosts happiness
+        return "You close your eyes and recall every detail of your dream, feeling a wave of happiness."
+    elif choice == 4:
+        return "You decide to do something else. What will it be?"
+    else:
+        return "Invalid choice. Please choose again."

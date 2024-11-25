@@ -1,0 +1,16 @@
+{
+  "session_id": "20241124_162941_e7bc9aa2e86542deb96785d24f8b66dd",
+  "current_node_id": "564ab04ebd4a42088db55c2a6089e156",
+  "timeline": [
+    {
+      "title": "Game Start",
+      "description": "Beginning of the journey",
+      "timestamp": "2024-11-25T00:29:41.345610+00:00"
+    },
+    {
+      "title": "Choice 1",
+      "description": "Take the path to the left",
+      "timestamp": "2024-11-25T00:29:49.874768+00:00"
+    }
+  ]
+}

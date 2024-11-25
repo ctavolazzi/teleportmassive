@@ -1,0 +1,3 @@
+   elif action == "4":
+       action = input("What unexpected action does Sam take? ")
+       logging.info(f"Sam takes an unexpected action: {action}")

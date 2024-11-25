@@ -1,0 +1,5 @@
+2024-11-15 19:55:45,234 | MainProcess | MainThread | root | INFO | Pulling image python:3.10-slim...
+2024-11-15 19:56:44,772 | MainProcess | MainThread | AutogenGame | INFO | Setting up agents
+2024-11-15 19:56:44,794 | MainProcess | MainThread | AutogenGame | INFO | Starting Autogen CYOA game
+2024-11-15 19:56:44,928 | MainProcess | MainThread | AutogenGame | ERROR | Error during game execution: Completions.create() got an unexpected keyword argument 'request_timeout'
+2024-11-15 19:56:55,103 | MainProcess | MainThread | AutogenGame | ERROR | Fatal error: Completions.create() got an unexpected keyword argument 'request_timeout'

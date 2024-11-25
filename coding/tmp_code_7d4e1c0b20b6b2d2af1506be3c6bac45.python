@@ -1,0 +1,7 @@
+def display_log(game_state):
+    return "\n".join(game_state.log)
+
+# Example usage
+game_state = GameState()
+handle_player_choice(game_state, 1)
+print(display_log(game_state))

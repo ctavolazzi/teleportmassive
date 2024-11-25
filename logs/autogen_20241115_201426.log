@@ -1,0 +1,13 @@
+2024-11-15 20:14:26,366 | MainProcess | MainThread | docker.utils.config | DEBUG | Trying paths: ['/Users/ctavolazzi/.docker/config.json', '/Users/ctavolazzi/.dockercfg']
+2024-11-15 20:14:26,366 | MainProcess | MainThread | docker.utils.config | DEBUG | Found file at path: /Users/ctavolazzi/.docker/config.json
+2024-11-15 20:14:26,367 | MainProcess | MainThread | docker.auth | DEBUG | Found 'credsStore' section
+2024-11-15 20:14:26,381 | MainProcess | MainThread | urllib3.connectionpool | DEBUG | http://localhost:None "GET /version HTTP/1.1" 200 None
+2024-11-15 20:14:26,387 | MainProcess | MainThread | urllib3.connectionpool | DEBUG | http://localhost:None "GET /v1.44/images/python:3.10-slim/json HTTP/1.1" 200 None
+2024-11-15 20:14:26,427 | MainProcess | MainThread | urllib3.connectionpool | DEBUG | http://localhost:None "POST /v1.44/containers/create?name=autogen-code-exec-84acf30c-8d72-4dc9-8249-93b127a7828f HTTP/1.1" 201 None
+2024-11-15 20:14:26,439 | MainProcess | MainThread | urllib3.connectionpool | DEBUG | http://localhost:None "GET /v1.44/containers/a90ea07cbdcbc56f0b4ed9aae5ce0f73d2d13d90b4fa8ae35c32961ffd13b9a3/json HTTP/1.1" 200 None
+2024-11-15 20:14:26,700 | MainProcess | MainThread | urllib3.connectionpool | DEBUG | http://localhost:None "POST /v1.44/containers/a90ea07cbdcbc56f0b4ed9aae5ce0f73d2d13d90b4fa8ae35c32961ffd13b9a3/start HTTP/1.1" 204 0
+2024-11-15 20:14:26,807 | MainProcess | MainThread | urllib3.connectionpool | DEBUG | http://localhost:None "GET /v1.44/containers/a90ea07cbdcbc56f0b4ed9aae5ce0f73d2d13d90b4fa8ae35c32961ffd13b9a3/json HTTP/1.1" 200 None
+2024-11-15 20:14:26,808 | MainProcess | MainThread | root | INFO | Setting up agents
+2024-11-15 20:14:26,809 | MainProcess | MainThread | AutogenGame | ERROR | Fatal error: 'AutogenGame' object has no attribute 'assistant_config'
+2024-11-15 20:14:26,819 | MainProcess | MainThread | urllib3.connectionpool | DEBUG | http://localhost:None "GET /v1.44/containers/autogen-code-exec-84acf30c-8d72-4dc9-8249-93b127a7828f/json HTTP/1.1" 200 None
+2024-11-15 20:14:36,976 | MainProcess | MainThread | urllib3.connectionpool | DEBUG | http://localhost:None "POST /v1.44/containers/a90ea07cbdcbc56f0b4ed9aae5ce0f73d2d13d90b4fa8ae35c32961ffd13b9a3/stop HTTP/1.1" 204 0

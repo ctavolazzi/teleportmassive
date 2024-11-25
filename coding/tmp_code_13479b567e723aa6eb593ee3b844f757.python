@@ -1,0 +1,134 @@
+import logging
+import os
+
+# Set up logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+# Game title
+TITLE = "Teleport Massive CYOA"
+
+# Starting scenario
+starting_scenario = """
+# Sam Iker Wakes Up
+Sam Iker awakens from a vivid dream where he was soaring around a massive skyscraper. The feeling of freedom still lingers as he opens his eyes. 
+
+What will he do next?
+- (1) Look out the window to see the city below.
+- (2) Check his phone for messages.
+- (3) Get dressed and prepare to leave.
+- (4) Other (say something or take an unexpected action).
+"""
+
+# Function to write the starting scenario to a markdown file
+def write_scenario_to_md(filename, content):
+    with open(filename, 'w') as file:
+        file.write(content)
+    logging.info(f"Wrote scenario to {filename}.")
+
+# Function to read a scenario from a markdown file
+def read_scenario_from_md(filename):
+    if os.path.exists(filename):
+        with open(filename, 'r') as file:
+            return file.read()
+    else:
+        logging.error(f"File {filename} not found.")
+        return None
+
+# Game state tracking tables
+game_state = {
+    "character_stats": {
+        "name": "Sam Iker",
+        "energy": 100,
+        "happiness": 50,
+    },
+    "location_stats": {
+        "current_location": "Skyscraper Apartment",
+        "time_of_day": "Morning",
+    },
+    "item_stats": {
+        "phone": True,
+        "keys": False,
+    },
+    "player_actions": [],
+}
+
+# Function to log game state
+def log_game_state():
+    logging.info(f"Current Game State: {game_state}")
+
+# Librarian function to manage game state
+def librarian(action):
+    if action == "look_out_window":
+        logging.info("Sam looks out the window.")
+        game_state["player_actions"].append(action)
+        game_state["character_stats"]["happiness"] += 5
+    elif action == "check_phone":
+        logging.info("Sam checks his phone.")
+        game_state["player_actions"].append(action)
+        game_state["location_stats"]["time_of_day"] = "Late Morning"
+    elif action == "get_dressed":
+        logging.info("Sam gets dressed and prepares to leave.")
+        game_state["player_actions"].append(action)
+        game_state["character_stats"]["energy"] -= 10
+    elif action == "other_action":
+        logging.info("Sam takes an unexpected action.")
+        game_state["player_actions"].append(action)
+    else:
+        logging.warning(f"Unknown action: {action}")
+
+# Function to generate dialogue based on game state
+def generate_dialogue():
+    if game_state["character_stats"]["happiness"] > 60:
+        return "Sam feels great and ready to tackle the day!"
+    elif game_state["character_stats"]["happiness"] > 30:
+        return "Sam feels okay, but something is off."
+    else:
+        return "Sam is feeling down and unsure about what to do next."
+
+# Function to display the title and starting scenario
+def display_start():
+    print(f"=== {TITLE} ===")
+    print(starting_scenario)
+    logging.info("Displayed starting scenario.")
+
+# Function to handle player choices
+def handle_choice(choice):
+    if choice == "1":
+        librarian("look_out_window")
+    elif choice == "2":
+        librarian("check_phone")
+    elif choice == "3":
+        librarian("get_dressed")
+    elif choice == "4":
+        action = input("What unexpected action does Sam take? ")
+        librarian("other_action")
+        logging.info(f"Sam takes an unexpected action: {action}")
+    else:
+        logging.warning("Invalid choice. Please choose again.")
+
+# Main game loop
+def game_loop():
+    while True:
+        display_start()
+        try:
+            choice = input("Enter your choice (1-4, or 'exit' to quit): ")
+        except EOFError:
+            print("\nInput not available. Please try running the program in a different environment.")
+            break
+        
+        if choice.lower() == 'exit':
+            logging.info("Player chose to exit the game.")
+            print("Thank you for playing!")
+            break
+        
+        handle_choice(choice)
+        log_game_state()
+        print(generate_dialogue())
+
+# Main execution
+if __name__ == "__main__":
+    md_filename = "starting_scenario.md"
+    write_scenario_to_md(md_filename, starting_scenario)
+    
+    # Start the game loop
+    game_loop()

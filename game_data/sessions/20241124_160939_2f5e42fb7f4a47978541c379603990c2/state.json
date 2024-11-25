@@ -1,0 +1,15 @@
+{
+  "game_id": "90230ddcaac111ef8315f45c89a7ba1b",
+  "session_id": "20241124_160939_2f5e42fb7f4a47978541c379603990c2",
+  "current_node_id": null,
+  "player_state": {},
+  "choice_history": [],
+  "timeline": [
+    {
+      "title": "Game Start",
+      "description": "Beginning of the journey",
+      "timestamp": "2024-11-24T16:09:39.540141"
+    }
+  ],
+  "game_started": "2024-11-24T16:09:39.540150"
+}

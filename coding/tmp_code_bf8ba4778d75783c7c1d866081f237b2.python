@@ -1,0 +1,30 @@
+import logging
+import os
+
+# Set up logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+# Game title
+TITLE = "Teleport Massive CYOA"
+
+# Starting scenario
+starting_scenario = """
+# Sam Iker Wakes Up
+Sam Iker awakens from a vivid dream where he was soaring around a massive skyscraper. The feeling of freedom still lingers as he opens his eyes. 
+
+What will he do next?
+- (1) Look out the window to see the city below.
+- (2) Check his phone for messages.
+- (3) Get dressed and prepare to leave.
+- (4) Other (say something or take an unexpected action).
+"""
+
+# Function to display the title and starting scenario
+def display_start():
+    print(f"=== {TITLE} ===")
+    print(starting_scenario)
+    logging.info("Displayed starting scenario.")
+
+# Run the display function to test it
+if __name__ == "__main__":
+    display_start()

@@ -1,0 +1,11 @@
+def handle_choice(choice, game):
+    if choice not in ['Option 1', 'Option 2', 'Option 3', 'Other']:
+        print("Invalid choice. Please try again.")
+    elif choice == 'Other':
+        other_action = input("What would you like to do?")
+        game.update_state(other_action)
+    else:
+        game.update_state(choice)
+    
+    print("You chose: ", choice)
+    print("Current game state: ", game.get_state())

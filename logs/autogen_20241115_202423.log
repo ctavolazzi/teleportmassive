@@ -1,0 +1,15 @@
+2024-11-15 20:24:23,428 | MainProcess | MainThread | docker.utils.config | DEBUG | Trying paths: ['/Users/ctavolazzi/.docker/config.json', '/Users/ctavolazzi/.dockercfg']
+2024-11-15 20:24:23,428 | MainProcess | MainThread | docker.utils.config | DEBUG | Found file at path: /Users/ctavolazzi/.docker/config.json
+2024-11-15 20:24:23,428 | MainProcess | MainThread | docker.auth | DEBUG | Found 'credsStore' section
+2024-11-15 20:24:23,444 | MainProcess | MainThread | urllib3.connectionpool | DEBUG | http://localhost:None "GET /version HTTP/1.1" 200 None
+2024-11-15 20:24:23,450 | MainProcess | MainThread | urllib3.connectionpool | DEBUG | http://localhost:None "GET /v1.44/images/python:3-slim/json HTTP/1.1" 200 None
+2024-11-15 20:24:23,491 | MainProcess | MainThread | urllib3.connectionpool | DEBUG | http://localhost:None "POST /v1.44/containers/create?name=autogen-code-exec-76b7b049-a793-41e0-af0c-e93365456fdc HTTP/1.1" 201 None
+2024-11-15 20:24:23,504 | MainProcess | MainThread | urllib3.connectionpool | DEBUG | http://localhost:None "GET /v1.44/containers/6ec6cffc977ca1107c138130edb24dd16e6b37e26a9e6405d1c6687517630eab/json HTTP/1.1" 200 None
+2024-11-15 20:24:23,785 | MainProcess | MainThread | urllib3.connectionpool | DEBUG | http://localhost:None "POST /v1.44/containers/6ec6cffc977ca1107c138130edb24dd16e6b37e26a9e6405d1c6687517630eab/start HTTP/1.1" 204 0
+2024-11-15 20:24:23,892 | MainProcess | MainThread | urllib3.connectionpool | DEBUG | http://localhost:None "GET /v1.44/containers/6ec6cffc977ca1107c138130edb24dd16e6b37e26a9e6405d1c6687517630eab/json HTTP/1.1" 200 None
+2024-11-15 20:24:23,893 | MainProcess | MainThread | AutogenGame | INFO | Setting up agents
+2024-11-15 20:24:23,894 | MainProcess | MainThread | httpx | DEBUG | load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-11-15 20:24:23,894 | MainProcess | MainThread | httpx | DEBUG | load_verify_locations cafile='/Users/ctavolazzi/.pyenv/versions/3.10.13/lib/python3.10/site-packages/certifi/cacert.pem'
+2024-11-15 20:24:23,910 | MainProcess | MainThread | AutogenGame | INFO | Starting Autogen CYOA game
+2024-11-15 20:24:23,918 | MainProcess | MainThread | urllib3.connectionpool | DEBUG | http://localhost:None "GET /v1.44/containers/autogen-code-exec-76b7b049-a793-41e0-af0c-e93365456fdc/json HTTP/1.1" 200 None
+2024-11-15 20:24:34,077 | MainProcess | MainThread | urllib3.connectionpool | DEBUG | http://localhost:None "POST /v1.44/containers/6ec6cffc977ca1107c138130edb24dd16e6b37e26a9e6405d1c6687517630eab/stop HTTP/1.1" 204 0

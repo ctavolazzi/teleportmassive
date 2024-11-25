@@ -1,0 +1,20 @@
+2024-11-15 20:03:57,945 | MainProcess | MainThread | AutogenGame | INFO | Setting up agents
+2024-11-15 20:03:57,974 | MainProcess | MainThread | AutogenGame | INFO | Starting Autogen CYOA game
+2024-11-15 20:04:15,314 | MainProcess | MainThread | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-15 20:04:32,951 | MainProcess | MainThread | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 502 Bad Gateway"
+2024-11-15 20:04:32,952 | MainProcess | MainThread | openai._base_client | INFO | Retrying request to /chat/completions in 0.408635 seconds
+2024-11-15 20:04:46,180 | MainProcess | MainThread | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-15 20:05:11,258 | MainProcess | MainThread | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-15 20:05:28,596 | MainProcess | MainThread | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-15 20:05:44,788 | MainProcess | MainThread | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-15 20:06:05,441 | MainProcess | MainThread | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 502 Bad Gateway"
+2024-11-15 20:06:05,442 | MainProcess | MainThread | openai._base_client | INFO | Retrying request to /chat/completions in 0.384564 seconds
+2024-11-15 20:06:36,443 | MainProcess | MainThread | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 502 Bad Gateway"
+2024-11-15 20:06:36,444 | MainProcess | MainThread | openai._base_client | INFO | Retrying request to /chat/completions in 0.946107 seconds
+2024-11-15 20:06:50,843 | MainProcess | MainThread | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-15 20:07:14,519 | MainProcess | MainThread | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-15 20:08:03,775 | MainProcess | MainThread | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 502 Bad Gateway"
+2024-11-15 20:08:03,775 | MainProcess | MainThread | openai._base_client | INFO | Retrying request to /chat/completions in 0.494018 seconds
+2024-11-15 20:08:42,609 | MainProcess | MainThread | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-15 20:09:06,724 | MainProcess | MainThread | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-15 20:09:17,767 | MainProcess | MainThread | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

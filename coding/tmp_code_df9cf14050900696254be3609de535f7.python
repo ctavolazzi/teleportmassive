@@ -1,0 +1,27 @@
+class GameState:
+    def __init__(self):
+        self.scene = 1
+        self.health = 100
+        self.energy = 100
+        self.mood = 'Neutral'
+        self.recall_dream = False
+        self.actions_taken = []
+
+    def update_state(self, action):
+        self.actions_taken.append(action)
+        if action == 'Option 1':
+            self.recall_dream = True
+        elif action == 'Option 2':
+            self.energy -= 10
+        elif action == 'Option 3':
+            self.energy += 10
+
+    def get_state(self):
+        return {
+            'Scene': self.scene,
+            'Health': self.health,
+            'Energy': self.energy,
+            'Mood': self.mood,
+            'Recall Dream': self.recall_dream,
+            'Actions Taken': self.actions_taken
+        }

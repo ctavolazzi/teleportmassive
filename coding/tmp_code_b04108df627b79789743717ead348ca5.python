@@ -1,0 +1,23 @@
+def game_loop():
+    simulated_choices = ["1", "2", "3", "4", "exit"]  # Simulated choices for testing
+    choice_index = 0  # Keep track of which choice to simulate
+
+    while True:
+        display_start()
+        
+        # Simulate input instead of using input()
+        if choice_index < len(simulated_choices):
+            choice = simulated_choices[choice_index]
+            choice_index += 1
+        else:
+            print("No more simulated choices. Exiting game.")
+            break
+        
+        if choice.lower() == 'exit':
+            logging.info("Player chose to exit the game.")
+            print("Thank you for playing!")
+            break
+        
+        handle_choice(choice)
+        log_game_state()
+        print(generate_dialogue())

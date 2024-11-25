@@ -1,0 +1,7 @@
+# Main execution
+if __name__ == "__main__":
+    md_filename = "starting_scenario.md"
+    write_scenario_to_md(md_filename, starting_scenario)
+    
+    # Start the game loop
+    game_loop()
