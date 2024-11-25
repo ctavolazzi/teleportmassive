@@ -1,6 +1,0 @@
-import logging
-
-logging.basicConfig(filename='game_log.log', level=logging.INFO)
-
-def log_action(action):
-    logging.info('Action taken: {}'.format(action))

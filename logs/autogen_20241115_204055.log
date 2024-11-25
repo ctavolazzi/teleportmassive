@@ -1,2 +1,0 @@
-2024-11-15 20:40:55,249 | MainProcess | MainThread | __main__ | ERROR | Game error: OPENAI_API_KEY environment variable not set
-2024-11-15 20:40:55,250 | MainProcess | MainThread | __main__ | INFO | Game ended
