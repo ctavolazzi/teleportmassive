@@ -1,0 +1,49 @@
+2024-11-15 20:49:00,463 | INFO | Story Generator initialized with Ollama
+2024-11-15 20:49:00,464 | INFO | Generating chapter 1
+2024-11-15 20:49:00,546 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 404 Not Found"
+2024-11-15 20:49:10,507 | INFO | Story Generator initialized with Ollama
+2024-11-15 20:49:10,508 | INFO | Generating chapter 1
+2024-11-15 20:50:15,942 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2024-11-15 20:51:08,265 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2024-11-15 20:51:35,126 | INFO | Story Generator initialized with Ollama
+2024-11-15 20:51:35,127 | INFO | Generating chapter 1
+2024-11-15 20:52:28,204 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2024-11-15 20:53:35,317 | INFO | Story will be saved to: stories/story_20241115_205335.md
+2024-11-15 20:55:10,040 | INFO | Story will be saved to: stories/story_20241115_205510.md
+2024-11-15 20:55:10,041 | WARNING | The return type of the function 'read_story_func' is not annotated. Although annotating it is optional, the function should return either a string, a subclass of 'pydantic.BaseModel'.
+2024-11-15 20:55:10,042 | WARNING | The return type of the function 'append_to_story_func' is not annotated. Although annotating it is optional, the function should return either a string, a subclass of 'pydantic.BaseModel'.
+2024-11-15 20:55:10,045 | INFO | Story Generator initialized with Ollama
+2024-11-15 20:55:10,045 | INFO | Generating story content
+2024-11-15 20:55:10,117 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 404 Not Found"
+2024-11-15 20:55:23,053 | INFO | Story will be saved to: stories/story_20241115_205523.md
+2024-11-15 20:55:23,054 | WARNING | The return type of the function 'read_story_func' is not annotated. Although annotating it is optional, the function should return either a string, a subclass of 'pydantic.BaseModel'.
+2024-11-15 20:55:23,055 | WARNING | The return type of the function 'append_to_story_func' is not annotated. Although annotating it is optional, the function should return either a string, a subclass of 'pydantic.BaseModel'.
+2024-11-15 20:55:23,056 | INFO | Story Generator initialized with Ollama
+2024-11-15 20:55:23,056 | INFO | Generating story content
+2024-11-15 20:55:49,324 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2024-11-15 20:55:49,405 | INFO | Updated story in stories/story_20241115_205523.md
+2024-11-15 20:56:50,683 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2024-11-15 20:57:50,290 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2024-11-15 20:58:29,540 | INFO | Story will be saved to: stories/story_20241115_205829.md
+2024-11-15 20:58:29,541 | WARNING | The return type of the function 'read_story_func' is not annotated. Although annotating it is optional, the function should return either a string, a subclass of 'pydantic.BaseModel'.
+2024-11-15 20:58:29,542 | WARNING | The return type of the function 'append_to_story_func' is not annotated. Although annotating it is optional, the function should return either a string, a subclass of 'pydantic.BaseModel'.
+2024-11-15 20:58:29,543 | INFO | Story Generator initialized with Ollama
+2024-11-15 20:58:29,543 | INFO | Generating story content
+2024-11-15 20:58:29,605 | INFO | Updated story in stories/story_20241115_205829.md
+2024-11-15 20:59:46,867 | INFO | Story will be saved to: stories/story_20241115_205946.md
+2024-11-15 20:59:46,868 | WARNING | The return type of the function 'read_story_func' is not annotated. Although annotating it is optional, the function should return either a string, a subclass of 'pydantic.BaseModel'.
+2024-11-15 20:59:46,869 | WARNING | The return type of the function 'append_to_story_func' is not annotated. Although annotating it is optional, the function should return either a string, a subclass of 'pydantic.BaseModel'.
+2024-11-15 20:59:46,870 | INFO | Story Generator initialized with Ollama
+2024-11-15 20:59:46,870 | INFO | Generating story content
+2024-11-15 20:59:46,960 | INFO | Updated story in stories/story_20241115_205946.md
+2024-11-15 21:00:56,264 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2024-11-15 21:01:42,661 | INFO | Story will be saved to: stories/story_20241115_210142.md
+2024-11-15 21:01:42,662 | WARNING | The return type of the function 'read_story_func' is not annotated. Although annotating it is optional, the function should return either a string, a subclass of 'pydantic.BaseModel'.
+2024-11-15 21:01:42,663 | WARNING | The return type of the function 'append_to_story_func' is not annotated. Although annotating it is optional, the function should return either a string, a subclass of 'pydantic.BaseModel'.
+2024-11-15 21:01:42,663 | INFO | Story Generator initialized with Ollama
+2024-11-15 21:01:42,663 | INFO | Generating story content
+2024-11-15 21:01:42,664 | INFO | No existing story found, starting fresh
+2024-11-15 21:01:42,725 | INFO | No existing story found, starting fresh
+2024-11-15 21:01:42,726 | INFO | Writing initial content
+2024-11-15 21:01:42,726 | INFO | Successfully updated story in stories/story_20241115_210142.md
+2024-11-15 21:03:00,742 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
